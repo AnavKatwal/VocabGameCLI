@@ -142,14 +142,14 @@
 141,antipathy,a deep-seated feeling of aversion(dislike),His fundamental antipathy to capitalism,1,false
 142,arcane,understood by few; mysterious or secret,The elderly teacher had an arcane way of teaching mathematics,1,false
 143,arduous,involving or requiring strenuous effort; difficult and tiring,She undertook the arduous task of monitoring the elections,1,false
-144,artless,without effort; natural and simple,"With her artless look, the girl next door looked beautiful even though she had no make-up on and didn't style her hair",1,false
+144,artless,without effort; natural and simple,"With her artless look, the girl next door looked beautiful even though she had no make-up on and didn't style her hair",2,false
 145,ascetic,"characterized by severe self-descipline and abstention from all forms of indulgence, typically for religious reasons","an ascetic life of prayer, fasting and manual  labour",0,true
 146,assuage,make (an unpleasant feeling) less intense,The letter assuaged the fears of most members,1,false
 147,betray,"unintensionally reveal; be evidence of; expose (a person, group, one's country) to  danger by treacherously giving information to an enemy",She drew a deep breath that betrayed her indignation,1,false
 148,bucolic,relating to the pleasant aspects of the country side and country life,The church is lovely for its bucolic setting,1,false
 149,burgeon,begin to grow or increase rapidly; flourish,"The city's suburbs have burgeoned, sprawling out from the center",0,true
 150,cacophonous,"involving or producing a harsh, discordant mixture of sounds",the cacophonous sound of slot machines,1,false
-151,canonize,formally declare (a dead person) to be saint,He was the last English saint to be canonized prior to the Reformation,1,false
+151,canonize,formally declare (a dead person) to be saint,He was the last English saint to be canonized prior to the Reformation,2,false
 152,censure,express severe disapproval of (someone or something) especially in a formal statement,the company was heavily censured by inspectors from the Department of Trade,1,false
 153,chicanery,use of tricks to deceive someone  (usually to extract money from them),Let us expose the business of its financial chicanery and reveal how they waste our tax dollars,1,false
 154,coalesce,come together to form one mass or whole,The puddles have coalesced into shallow streams,1,false
@@ -173,7 +173,7 @@
 172,provision,providing or supplying something for use,The government is responsible for the provision of education for all the children,1,false
 173,impunity,freedom from punishment,the impunity enjoyed by military officers implicated in civilian killings,1,false
 174,ridicule,to laugh at someone in an unkind way,the theory was ridiculed and dismissed,1,false
-175,promulgate,promote or make widely known,these objectives have to be promulgated within the organization,0,true
+175,promulgate,promote or make widely known,these objectives have to be promulgated within the organization,-1,true
 176,marginalize,treat as insignificant,"by removing religion from the public space, we marginalize it",1,false
 177,foresight,the ability to predict what will happen or be needed in  the future,he had the foresight to check that his escape route was clear,1,false
 178,prescient,having or showing knowledge of events before they take place,"Her vocabulary may have become archaic, but her stance was prescient and brave",0,true
