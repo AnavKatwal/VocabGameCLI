@@ -31,6 +31,7 @@ public class QuizGame extends Game{
 
             Word word = wordMap.get(wordId);
             String ansiValue;
+
             if(word.isMarked()){
                 ansiValue = ANSI_BOLD + ANSI_YELLOW;    // setting yellow bold font for marked words
             } else {
@@ -39,7 +40,7 @@ public class QuizGame extends Game{
             System.out.printf(ANSI_RESET + "Word: %s \n", ansiValue + word.getWord());
 
             // create random list of options index
-            ArrayList<Integer> optionsIndexList = getRandomIdList(word);
+        ArrayList<Integer> optionsIndexList = getRandomIdList(word, OPTIONS_QUANTITY);
 
             printOptions(optionsIndexList);
 
@@ -74,50 +75,13 @@ public class QuizGame extends Game{
         fileReadWrite.writeToFile(wordMap);
     }
 
-    private ArrayList<Integer> getRandomIdList(){
-        /*
-        method to get random list of wordId for the words to play
-         */
-        ArrayList<Integer> randomIdList = new ArrayList<>();
-        int range = lastWord - firstWord + 1;
-
-        while(randomIdList.size() < range){
-            int randomId = random.nextInt(range) + firstWord; // to contain the range within firstWord and lastWord
-            if(!randomIdList.contains(randomId)){
-                randomIdList.add(randomId);
-            }
-        }
-        return randomIdList;
-    }
-
-    private ArrayList<Integer> getRandomIdList(Word word){
-        /*
-        overloaded method to get random list of wordId for the options
-         */
-        ArrayList<Integer> randomIdList = new ArrayList<>();
-        int range = lastWord - firstWord + 1;
-
-        int answerId = word.getWordId();
-
-        while(randomIdList.size() < OPTIONS_QUANTITY - 1){
-            int randomId = random.nextInt(range) + firstWord; // to contain the range within firstWord and lastWord
-
-            if(!(randomIdList.contains(randomId) || randomId == answerId)){
-                randomIdList.add(randomId);
-            }
-        }
-        randomIdList.add(answerId);
-        Collections.shuffle(randomIdList);
-        return randomIdList;
-    }
-
     private void printOptions(ArrayList<Integer> optionsList) {
         /*
         displays the options for the word. uses optionsList to get the random list of wordIds
         along with answer word's id whose definitions are used as the options.
          */
 
-        System.out.println(ANSI_RESET + "Options: (press \"q\" to quit, \"m\" to mark the word and \"u\" to unmark the word)");
+        System.out.println(ANSI_RESET + "Options: (press \"q\" to quit, \"m\" to mark the word");
         for (int i = 0; i < optionsList.size(); i++) {
             Word word = wordMap.get(optionsList.get(i));
             System.out.printf("\t%d. %s %n", i + 1, ANSI_RESET + word.getDefinition().replace('"', '\0'));

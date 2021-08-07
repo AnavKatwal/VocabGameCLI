@@ -46,8 +46,8 @@ public class FileReadWrite {
         String[] data = line.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
         int wordId = Integer.parseInt(data[0]);
         String word = data[1].replace(" ", "");
-        String definition = data[2];
-        String example = data[3];
+        String definition = data[2].replace("  ", " ");
+        String example = data[3].replace("  ", " ");
         int weight = Integer.parseInt(data[4]);
         boolean marked = Boolean.parseBoolean(data[5]);
 

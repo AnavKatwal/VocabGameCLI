@@ -1,6 +1,9 @@
 package com.grevocab;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.Random;
 
 public abstract class Game {
     static final String ANSI_RESET = "\u001B[0m";
@@ -13,6 +16,8 @@ public abstract class Game {
     static final String ANSI_CYAN = "\u001B[36m";
     static final String ANSI_BOLD = "\u001B[1m";
     static final String ANSI_UNDERLINE = "\u001B[4m";
+
+    private Random random = new Random();
 
     final String WORDS_FILE = "vocab-words.csv";
     HashMap<Integer, Word> wordMap;
@@ -34,13 +39,50 @@ public abstract class Game {
         this.lastWord = lastWord;
     }
 
+    ArrayList<Integer> getRandomIdList(){
+        /*
+        method to get random list of wordId for the words to play
+         */
+        ArrayList<Integer> randomIdList = new ArrayList<>();
+        int range = lastWord - firstWord + 1;
+
+        while(randomIdList.size() < range){
+            int randomId = random.nextInt(range) + firstWord; // to contain the range within firstWord and lastWord
+            if(!randomIdList.contains(randomId)){
+                randomIdList.add(randomId);
+            }
+        }
+        return randomIdList;
+    }
+
+    ArrayList<Integer> getRandomIdList(Word word, int optionsQuantity){
+        /*
+        overloaded method to get random list of wordId for the options
+         */
+        ArrayList<Integer> randomIdList = new ArrayList<>();
+        int range = lastWord - firstWord + 1;
+
+        int answerId = word.getWordId();
+
+        while(randomIdList.size() < optionsQuantity - 1){
+            int randomId = random.nextInt(range) + firstWord; // to contain the range within firstWord and lastWord
+
+            if(!(randomIdList.contains(randomId) || randomId == answerId)){
+                randomIdList.add(randomId);
+            }
+        }
+        randomIdList.add(answerId);
+        Collections.shuffle(randomIdList);
+        return randomIdList;
+    }
+
     void markWord(Word word){
         /*
         set the marked field of a word to true if not already. marked words are displayed at the end of the game
         to see which words the player struggles with. the marked field is saved in the csv file as well.
          */
         if(word.isMarked()) {
-            System.out.println(ANSI_RESET + "Word has already been marked. Press \"u\" and then enter to unmark");
+            System.out.println(ANSI_RESET + "Word has already been marked.");
         } else {
             word.setMarked(true);
             word.setWeight(0);  // marking the word also sets the weight to 0.
@@ -67,11 +109,11 @@ public abstract class Game {
         displays the words whose marked field is set to true. the word along with the definition is displayed.
          */
         int count=0;
-        System.out.println(ANSI_BOLD + ANSI_UNDERLINE + "Marked words:" + ANSI_RESET);
+        System.out.println(ANSI_BOLD + ANSI_UNDERLINE + "Marked words:" + ANSI_RESET + "\n");
         for(int id : wordMap.keySet()){
             Word word = wordMap.get(id);
             if(word.isMarked()){
-                System.out.printf("\t%s : %s \n",ANSI_RESET + ANSI_YELLOW + ANSI_BOLD + word.getWord(), ANSI_RESET + word.getDefinition());
+                System.out.printf("\t%s : %s \n \n",ANSI_RESET + ANSI_YELLOW + ANSI_BOLD + word.getWord(), ANSI_RESET + word.getDefinition().replace("\"", ""));
             }
             count ++;
         }

@@ -67,19 +67,6 @@ public class Hangman extends Game{
         fileReadWrite.writeToFile(wordMap);
     }
 
-    private ArrayList<Integer> getRandomIdList(){
-        ArrayList<Integer> randomIdList = new ArrayList<>();
-        int size = lastWord - firstWord + 1;
-
-        while(randomIdList.size() < size){
-            int randomId = random.nextInt(size) + firstWord; // wordId starts from 1 not 0, hence the +1
-            if(!randomIdList.contains(randomId)){
-                randomIdList.add(randomId);
-            }
-        }
-        return randomIdList;
-    }
-
     private boolean wantToMark(Word word){
         Scanner s = new Scanner(System.in);
         System.out.printf(ANSI_RESET + "Do you want to mark the word %s (y/n)\n", ANSI_BOLD + word.getWord());
