@@ -1,182 +1,289 @@
 0,Word,Definition,Example,Weight,Marked
-1,anachronism,"a thing belonging or appropriate to a period other than that in which it exists, especially a thing that is conspicuously old-fashioned",the town is a throwback to medieval times an anachronism that has survived the passing years,4,false
-2,obscure,not important or well known,Marketers worry that their ads will linger unseen in obscure slots,5,false
-3,plausibility,quality of seeming reasonable,there aren't much evidences that support the plausibility of the theory,5,false
-4,superficiality,lack of depth,we ignored the news case because of its superficiality,5,false
-5,apotheosis,the highest point in development,the artist was at the apotheosis of his career,6,false
-6,underscore,emphasize,the need for fire detectors in cargo bays was underscored by some accidents in the 1980s.,8,false
-7,temperance,abstinence or restricting oneself from alcoholic drink,export of spirits was hampered by the temperance movement,9,false
-8,eminence,fame or acknowledged superiority within a particular field,her eminence in cinematography,7,false
-9,tumultuous,"excited, confused or disorderly",a tumultuous crowd,8,false
-10,providential,lucky; occurring at a favourable time,Sam's dangerous and providential escape made her tremble,6,false
-11,precarious,dependent on chance; uncertain,Yet London's position is more precarious than it feels. The city's success over the past quarter-century has been the consequence of historical accident and good policy.,0,true
-12,abstinent,refraining from an activity,Sarah knows that alcoholism runs in her family. That's why she's chosen to be totally abstinent from alcohol.,2,false
-13,relentless,harshly constant,the relentless heat of the desert,4,false
-14,coterie,a small group of people with shared interests or tastes,He rules through a tight coterie of loyal aides,5,false
-15,invariably,constantly; always,ranch meals are invariably big and hearty,4,false
-16,vie,compete eagerly with someone in order to do or achieve something,the athletes vied for a place in the British team,5,false
-17,preposterous,ridiculous,a preposterous attempt to turn back the pages of history,5,false
-18,insidious,working in a subtle but destructive way,"Plaque is insidious: we cannot see it, but each day it eats away at our enamel, causing cavities and other dental problems.",5,false
-19,akimbo,hands on hip and elbows pointed outwards,"she stood with her arms akimbo, frowning at the small boy",4,false
-20,feign,pretend; fake,He feigned that he was ill,5,false
-21,implore,request earnestly,we implored him to reconsider his decision,4,false
-22,lackey,servile follower,lackeys were waiting to help them from the carriage,3,false
-23,albeit,though,"he was making progress, albeit rather slowly",3,false
-24,grudgingly,reluctantly or resentfully,I grudgingly accepted his apology,4,false
-25,presumptuous,over confident,hope I won't be considered presumptuous if I offer some advice,5,false
-26,impenitent,not feeling shame or regret,she has remained impenitent of her mistake,3,false
-27,erstwhile,former,the erstwhile president of the company,5,false
-28,shun,persistently avoid or ignore,he shunned fashionable society,5,false
-29,harbinger,something that announces or signals a future event,witch hazels are the harbingers of spring0,5,false
-30,prophetic,predicting future,his warnings proved prophetic,5,false
-31,rife,full of; widespread,speculation ran rife that he was an arms dealer,4,false
-32,speculate,to form a theory without firm evidence,my colleagues speculate about my private life,4,false
-33,exacting,demanding accuracy,"Though his childhood piano teacher was so exacting, Max is thankful now, having become a professional pianist.",4,false
-34,copious, abundant in supply or quantity,with copious food and water the chickens will survive this winter,5,false
-35,scathing,damaging,she launched a scathing attack on the prime minister,4,false
-36,meticulous,with careful attention to details,"Overconfident students may understand how to solve math problems but not be meticulous in their calculations, resulting in wrong answers.",4,false
-37,acerbic,harsh in tone,"Most movie critics are�acerbic�towards summer blockbusters, often referring to them as garbage.",3,false
-38,humdrum,lacking excitement or variety; boring,"After one year in this office, the job has started to become humdrum",5,false
-39,cerebral,intellectual rather than emotional or physical,these problems require a cerebral approach rather than just mindlessly reading through them,5,false
-40,proclivity,a tendency to choose or do something regularly,Hary's proclivity for practicing algorithms is what got him a job,4,false
-41,flout,"openly disregard (a rule, law, or convention)",Once in a while you tend to find some inventions that seem to flout what rules we know about physics,5,false
-42,obsequious,obedient or attentive to an excessive or servile degree,but at the time of need her obsequious followers abandoned her,5,false
-43,deify,worship or regard as god,the crowed almost deified the captain for winning a round that everyone thought was lost,4,false
-44,congenial,pleasant; suited,this office at home has proved to be quiet congenial for me,4,false
-45,loquacious,talkative,"despite her shy nature, once she had a few drinks her loquacious self managed to grab attention of many people at the bar",3,false
-46,wary,feeling or showing caution about possible danger or problems,Loki's reputation has made his friends wary of him,4,false
-47,misnomer,wrong or inaccurate name or designation,The name Greenland is a misnomer because most of the land there is covered in white snow.,5,false
-48,pragmatic,guided by practical experience and observation rather than theory,critical reasoning requires a pragmatic approach of evaluation of the topic ,5,false
-49,capricious,given to sudden change in behaviour or mood,It is the capricious weather at the high altitude that accounts for the fatality rate of Mt. Everest,4,false
-50,daunting,intimidating,solving these problems from the internet can sometimes be quiet daunting,5,false
-51,insipid,lacking flavour or interest,months with the same food has started feeling insipid,0,true
-52,spendthrift,"someone who spends money in an extravagant, irresponsible way",She spent all her money in parties and shopping unnecessary items. What a spendthrift!,4,false
-53,austere,strict in manner; lack of comfort or luxuries,the austere interior of his room clearly reflects his priorities in life,2,false
-54,didactic,intended to teach; instructive,They insisted that all the problems in the interview were didactic. But it still felt like free work to me,6,false
-55,taciturn,reserved or uncommunicative,No company would want to have a taciturn employee. They could seriously hamper the efficiency of a whole group.,5,false
-56,quixotic,extremely idealistic; unrealistic and impractical,The idea of reaching the moon was considered quixotic just about a century ago.,5,false
-57,puerile,silly and immature,her puerile nature of fighting over smaller things was why they broke up,4,false
-58,placate,make someone less angry or hostile,the police's attempt to placate the protestors backfired,6,false
-59,cursory,hasty and not thorough and detailed,Many people including myself make the mistake of going through the passage cursorily,4,false
-60,amorphous,without definitive shape or form ,the moon formed an amorphous reflection on the surface of the lake,0,true
-61,abound,large in quantity,the hospitals were abound with people after the government declared free vaccination,4,false
-62,misanthrope,someone who dislikes humankind,"it wouldn't be inappropriate to call Chris a misanthrope. After all, he desired to live alone in the wild",4,false
-63,homogeneous,similar in kind; alike,"with all these migrations, people of Kathmandu are getting less and less homogeneous every year",5,false
-64,conspicuous,clearly visible; obvious,it was conspicuous that Sharon had no intentions to return the money she had lent,4,false
-65,belie,fail to fulfill or justify (a claim or expectation); hide something ,the statement that he loved his wife is belied by the torture he used to give her,6,false
-66,disseminate,"spread (something, especially information) widely",The CEO was aware that his speech would disseminate across the news channels,4,false
-67,acumen,the ability to perceive things deeply and accurately,"Lindsey's academics was also backed up by her acumen, which did not fail to impress the interviewers",6,false
-68,enthrall,catch attention; captivate,Her blue eyes were enough to enthrall a man,5,false
-69,decadent,characterized by excessive self-indulgence and moral decay; sinful,Richard was determined that he did not want the decadent life his father's will had left him,5,false
-70,accentuate,to make something more conspicuous or noticeable,The rain actually accentuates the smell of a cigarette,5,false
-71,abstain,to refrain oneself from doing something,the fact that so many people abstained from voting proves how less we trust these politicians,5,false
-72,boorish,bad mannered; rude,Samantha didn't want her daughter to be raised among such boorish children,4,false
-73,cherish,to value something greatly,my father has a few cherished memories of the time I grew up,5,false
-74,corroborate,to validate or confirm a statement,without the witness there is no way to corroborate the charges against him,5,false
-75,besmirch,to attack someone's reputation with false charge,he claims to have been besmirched,5,false
-76,appease,decrease a feeling; placate,the pigs would be enough to appease the beast's hunger,5,false
-77,admonishment,strong warning,"Global warming, a clear admonishment from nature to human kind",5,false
-78,condescending,having or showing an attitude of superiority,she thought that the teachers were arrogant and condescending,6,false
-79,sycophantic,overly flattering; servile,the CEO was surrounded by sycophantic people,5,false
-80,novelty,quality of being new or original,the novelty of being a married woman wore off,3,false
-81,urbane,courteous; well mannered; sophisticated,they are charming and urbane,5,false
-82,cynical,believing that people are motivated purely by self-interest; distrustful of human sincerity,he was brutally cynical,5,false
-83,conviction,a firmly held opinion or belief,she takes pride in stating her political convictions,5,false
-84,diffident,shy; not bold; not excessively large,drink modest amounts of alcohol,5,false
-85,disinterested,impartial or unbiased; dispassionate,the judge must always work in a disinterested manner,5,false
-86,fortuitous,occurring by happy chance rather than intentions,missing my trained turned out to be rather fortuitous since I met my childhood friend on the next train,5,false
-87,indecorous,improper,everyone was shocked when Geil wore the indecorous dress to the church party,5,false
-88,unseemly,not proper or appropriate,he acted in an unseemly manner,5,false
-89,polemic,controversy,the polemical decision caused a stir in the community,5,false
-90,aspiration,hope or ambition of achieving something,the needs and aspirations of people,5,false
-91,altruism,selfless concern for the well being of others,some may choose to work with vulnerable old people out of altruism,5,false
-92,concede,to admit; acknowledge,eventually she conceded that she over reacted,5,false
-93,fickle,given to sudden change; capricious,celebs try to appeal to the increasingly fickle public,5,false
-94,fanatical,having excessive enthusiasm and devotion to an idea; zealous,her husband was fanatical about cleanliness,5,false
-95,specious,deceptively pleasing,almost every image on the tv is specious and is not to be trusted,6,false
-96,elusive,difficult to catch or find or remember,success will ever more be elusive,0,true
-97,elated,ecstatically happy,"after the concert, I felt elated",4,false
-98,acolyte,assistant or a follower,she runs the department through a small group of acolytes,3,false
-99,martinet,a strict disciplinarian,Our care taker could not tolerate disobedience. She was a martinet,4,false
-100,sporadic,occurring at irregular intervals or only a few places,Zambia endured sporadic blackouts when the drought crippled their power generation,3,false
-101,tyrant,a cruel and oppressive ruler,the tyrant was deposed by popular demonstrations,4,false
-102,conscience,moral sense of right and wrong,he had a guilty conscience about his desires,3,false
-103,pervasive,spreading widely through an area or a group of people; rife,"Misinformation, hatred and offense are pervasive",1,true
-104,abridge,shorten; diminish,the introduction is abridged from the author's afterword to the novel,3,false
-105,circumscribe,restrict within limits,The minister's powers are circumscribed both by tradition and the organization of local government ,3,false
-106,conform,comply with rules or standards,the kitchen does not conform to hygiene regulations,3,false
-107,ostentation,excessive display of wealth and luxury,"the office was spacious, but without any display of ostentation",3,false
-108,singularity,unusual and distinctive nature; peculiarity,she believed in singularity of all traditions,3,false
-109,adulterate,to render something poorer by adding another substance; degrade,the brewer is said to adulterate his beer,3,true
-110,advocate,someone who publicly recommends or supports a particular cause or policy,he was untiring advocate of economic reform,4,false
-111,aggrandize,"increase power, wealth or reputation",Jack is a philanthropist who only supports causes that aggrandize him in the eyes of the world,4,false
-112,alacrity,liveliness and eagerness,he accepted with alacrity,1,true
-113,ambivalent,having mixed feelings or contradictory ideas; unsure,"Some loved her, some hated her. I was ambivalent about her",4,false
-114,ameliorate,make something (bad or unsatisfactory) better,He wanted to ameliorate the present suffering,4,false
-115,amenable,open and responsive to suggestion; easily persuaded,parents who have amenable children,3,false
-116,audacious,willingness to take bold risks; showing lack of respect,he made an audacious remark,3,false
-117,avaricious,having extreme greed for wealth or material gain,He showed indeed none of the avaricious temper so common among the politicians of the time,4,false
-118,banal,so lacking in originality as to be obvious and boring,"songs with banal, repeated words",3,false
-119,benign,gentle and kindly,his benign but firm manner,4,false
-120,brazen,bold and without shame,he went about his illegal business with a brazen assurance,5,false
-121,calumny,making a false statement to damage someone's reputation; slander,a change in the law would prevent the press from publishing calumny,3,false
-122,candid,truthful and straightforward; frank,his responses were remarkably candid,3,false
-123,castigate,criticize or punish someone/something severely,Health inspectors castigated the kitchen staff for poor standards,3,false
-124,caustic,sarcastic in scathing and bitter way; able to burn or corrode organic tissue by chemical reaction,The players were making caustic comments about the refereeing,3,false
-125,construe,to interpret or perceive in a particular way,his words could hardly be construed as an apology,3,false
-126,contrite,feeling or expressing remorse at the recognition that one has done wrong,After the realization she started talking in a contrite tone,4,false
-127,convoluted,extremely complex and difficult to follow,The movie is let down by a convoluted plot in which nothing really happens,4,false
-128,covet,greatly desire for something (especially belonging to another),I covet one of their smart bags,3,false
-129,craven,cowardly,Courage the craven dog,3,false
-130,decorum,behaviour in keeping with good taste and propriety,he had acted with utmost decorum,3,false
-131,deft,skillful in physical movement,the magician was quiet deft at his performance,3,false
-132,demur,raise objection or show reluctance,"normally she would have accepted the challenge, but she demurred",3,false
-133,derivative,imitative of the work of another; based on another source,an artist who is not in the slightest bit derivative,3,false
-134,desiccate,remove moisture from something,both the older growth and new vegetation were desiccated by months of relentless sun,3,false
-135,diatribe,a forceful and bitter verbal attack against someone or something,"In this long diatribe, you began to reveal yourself to me",3,false
-136,incredulous,unwilling or unable to believe something ,I was incredulous when he told me about the secret,4,false
-137,ingenuous,innocent and unsuspecting,"he eyed her with wide, ingenuous eyes",3,false
-138,abate,become less in amount or intensity ,the storm suddenly abated,0,true
-139,abjure,formally reject or disavow a formerly held belief,He abjured his earlier statements about religion,4,false
-140,anomalous,"deviating from what is standard, normal or expected",The researchers could not explain the anomalous test results ,3,false
-141,antipathy,a deep-seated feeling of aversion(dislike),His fundamental antipathy to capitalism,3,false
-142,arcane,understood by few; mysterious or secret,The elderly teacher had an arcane way of teaching mathematics,3,false
-143,arduous,involving or requiring strenuous effort; difficult and tiring,She undertook the arduous task of monitoring the elections,3,false
-144,artless,without effort; natural and simple,"With her artless look, the girl next door looked beautiful even though she had no make-up on and didn't style her hair",5,false
-145,ascetic,"characterized by severe self-descipline and abstention from all forms of indulgence, typically for religious reasons","an ascetic life of prayer, fasting and manual labour",1,true
-146,assuage,make (an unpleasant feeling) less intense,The letter assuaged the fears of most members,2,true
-147,betray,"unintensionally reveal; be evidence of; expose (a person, group, one's country) to danger by treacherously giving information to an enemy",She drew a deep breath that betrayed her indignation,4,false
-148,bucolic,relating to the pleasant aspects of the country side and country life,The church is lovely for its bucolic setting,3,false
+1,anachronism,"a thing belonging or appropriate to a period other than that in which it exists, especially a thing that is conspicuously old-fashioned",the town is a throwback to medieval times an anachronism that has survived the passing years,5,false
+2,obscure,not important or well known,Marketers worry that their ads will linger unseen in obscure slots,6,false
+3,plausibility,quality of seeming reasonable,there aren't much evidences that support the plausibility of the theory,6,false
+4,superficiality,lack of depth,we ignored the news case because of its superficiality,6,false
+5,apotheosis,the highest point in development,the artist was at the apotheosis of his career,7,false
+6,underscore,emphasize,the need for fire detectors in cargo bays was underscored by some accidents in the 1980s.,9,false
+7,temperance,abstinence or restricting oneself from alcoholic drink,export of spirits was hampered by the temperance movement,10,false
+8,eminence,fame or acknowledged superiority within a particular field,her eminence in cinematography,8,false
+9,tumultuous,"excited, confused or disorderly",a tumultuous crowd,9,false
+10,providential,lucky; occurring at a favourable time,Sam's dangerous and providential escape made her tremble,7,false
+11,precarious,dependent on chance; uncertain,Yet London's position is more precarious than it feels. The city's success over the past quarter-century has been the consequence of historical accident and good policy.,4,false
+12,abstinent,refraining from an activity,Sarah knows that alcoholism runs in her family. That's why she's chosen to be totally abstinent from alcohol.,3,false
+13,relentless,harshly constant,the relentless heat of the desert,5,false
+14,coterie,a small group of people with shared interests or tastes,He rules through a tight coterie of loyal aides,6,false
+15,invariably,constantly; always,ranch meals are invariably big and hearty,5,false
+16,vie,compete eagerly with someone in order to do or achieve something,the athletes vied for a place in the British team,6,false
+17,preposterous,ridiculous,a preposterous attempt to turn back the pages of history,6,false
+18,insidious,working in a subtle but destructive way,"Plaque is insidious: we cannot see it, but each day it eats away at our enamel, causing cavities and other dental problems.",6,false
+19,akimbo,hands on hip and elbows pointed outwards,"she stood with her arms akimbo, frowning at the small boy",5,false
+20,feign,pretend; fake,He feigned that he was ill,6,false
+21,implore,request earnestly,we implored him to reconsider his decision,5,false
+22,lackey,servile follower,lackeys were waiting to help them from the carriage,4,false
+23,albeit,though,"he was making progress, albeit rather slowly",4,false
+24,grudgingly,reluctantly or resentfully,I grudgingly accepted his apology,5,false
+25,presumptuous,over confident,hope I won't be considered presumptuous if I offer some advice,6,false
+26,impenitent,not feeling shame or regret,she has remained impenitent of her mistake,4,false
+27,erstwhile,former,the erstwhile president of the company,6,false
+28,shun,persistently avoid or ignore,he shunned fashionable society,6,false
+29,harbinger,something that announces or signals a future event,witch hazels are the harbingers of spring0,6,false
+30,prophetic,predicting future,his warnings proved prophetic,6,false
+31,rife,full of; widespread,speculation ran rife that he was an arms dealer,5,false
+32,speculate,to form a theory without firm evidence,my colleagues speculate about my private life,5,false
+33,exacting,demanding accuracy,"Though his childhood piano teacher was so exacting, Max is thankful now, having become a professional pianist.",5,false
+34,copious, abundant in supply or quantity,with copious food and water the chickens will survive this winter,6,false
+35,scathing,damaging,she launched a scathing attack on the prime minister,5,false
+36,meticulous,with careful attention to details,"Overconfident students may understand how to solve math problems but not be meticulous in their calculations, resulting in wrong answers.",5,false
+37,acerbic,harsh in tone,"Most movie critics are�acerbic�towards summer blockbusters, often referring to them as garbage.",4,false
+38,humdrum,lacking excitement or variety; boring,"After one year in this office, the job has started to become humdrum",6,false
+39,cerebral,intellectual rather than emotional or physical,these problems require a cerebral approach rather than just mindlessly reading through them,6,false
+40,proclivity,a tendency to choose or do something regularly,Hary's proclivity for practicing algorithms is what got him a job,5,false
+41,flout,"openly disregard (a rule, law, or convention)",Once in a while you tend to find some inventions that seem to flout what rules we know about physics,6,false
+42,obsequious,obedient or attentive to an excessive or servile degree,but at the time of need her obsequious followers abandoned her,6,false
+43,deify,worship or regard as god,the crowed almost deified the captain for winning a round that everyone thought was lost,5,false
+44,congenial,pleasant; suited,this office at home has proved to be quiet congenial for me,5,false
+45,loquacious,talkative,"despite her shy nature, once she had a few drinks her loquacious self managed to grab attention of many people at the bar",4,false
+46,wary,feeling or showing caution about possible danger or problems,Loki's reputation has made his friends wary of him,5,false
+47,misnomer,wrong or inaccurate name or designation,The name Greenland is a misnomer because most of the land there is covered in white snow.,6,false
+48,pragmatic,guided by practical experience and observation rather than theory,critical reasoning requires a pragmatic approach of evaluation of the topic ,6,false
+49,capricious,given to sudden change in behaviour or mood,It is the capricious weather at the high altitude that accounts for the fatality rate of Mt. Everest,5,false
+50,daunting,intimidating,solving these problems from the internet can sometimes be quiet daunting,6,false
+51,insipid,lacking flavour or interest,months with the same food has started feeling insipid,4,false
+52,spendthrift,"someone who spends money in an extravagant, irresponsible way",She spent all her money in parties and shopping unnecessary items. What a spendthrift!,5,false
+53,austere,strict in manner; lack of comfort or luxuries,the austere interior of his room clearly reflects his priorities in life,3,false
+54,didactic,intended to teach; instructive,They insisted that all the problems in the interview were didactic. But it still felt like free work to me,7,false
+55,taciturn,reserved or uncommunicative,No company would want to have a taciturn employee. They could seriously hamper the efficiency of a whole group.,6,false
+56,quixotic,extremely idealistic; unrealistic and impractical,The idea of reaching the moon was considered quixotic just about a century ago.,6,false
+57,puerile,silly and immature,her puerile nature of fighting over smaller things was why they broke up,6,false
+58,placate,make someone less angry or hostile,the police's attempt to placate the protestors backfired,7,false
+59,cursory,hasty and not thorough and detailed,Many people including myself make the mistake of going through the passage cursorily,5,false
+60,amorphous,without definitive shape or form ,the moon formed an amorphous reflection on the surface of the lake,4,false
+61,abound,large in quantity,the hospitals were abound with people after the government declared free vaccination,5,false
+62,misanthrope,someone who dislikes humankind,"it wouldn't be inappropriate to call Chris a misanthrope. After all, he desired to live alone in the wild",5,false
+63,homogeneous,similar in kind; alike,"with all these migrations, people of Kathmandu are getting less and less homogeneous every year",6,false
+64,conspicuous,clearly visible; obvious,it was conspicuous that Sharon had no intentions to return the money she had lent,5,false
+65,belie,fail to fulfill or justify (a claim or expectation); hide something ,the statement that he loved his wife is belied by the torture he used to give her,7,false
+66,disseminate,"spread (something, especially information) widely",The CEO was aware that his speech would disseminate across the news channels,5,false
+67,acumen,the ability to perceive things deeply and accurately,"Lindsey's academics was also backed up by her acumen, which did not fail to impress the interviewers",7,false
+68,enthrall,catch attention; captivate,Her blue eyes were enough to enthrall a man,6,false
+69,decadent,characterized by excessive self-indulgence and moral decay; sinful,Richard was determined that he did not want the decadent life his father's will had left him,6,false
+70,accentuate,to make something more conspicuous or noticeable,The rain actually accentuates the smell of a cigarette,6,false
+71,abstain,to refrain oneself from doing something,the fact that so many people abstained from voting proves how less we trust these politicians,6,false
+72,boorish,bad mannered; rude,Samantha didn't want her daughter to be raised among such boorish children,5,false
+73,cherish,to value something greatly,my father has a few cherished memories of the time I grew up,6,false
+74,corroborate,to validate or confirm a statement,without the witness there is no way to corroborate the charges against him,6,false
+75,besmirch,to attack someone's reputation with false charge,he claims to have been besmirched,6,false
+76,appease,decrease a feeling; placate,the pigs would be enough to appease the beast's hunger,6,false
+77,admonishment,strong warning,"Global warming, a clear admonishment from nature to human kind",6,false
+78,condescending,having or showing an attitude of superiority,she thought that the teachers were arrogant and condescending,7,false
+79,sycophantic,overly flattering; servile,the CEO was surrounded by sycophantic people,6,false
+80,novelty,quality of being new or original,the novelty of being a married woman wore off,4,false
+81,urbane,courteous; well mannered; sophisticated,they are charming and urbane,6,false
+82,cynical,believing that people are motivated purely by self-interest; distrustful of human sincerity,he was brutally cynical,6,false
+83,conviction,a firmly held opinion or belief,she takes pride in stating her political convictions,4,false
+84,diffident,shy; not bold; not excessively large,drink modest amounts of alcohol,6,false
+85,disinterested,impartial or unbiased; dispassionate,the judge must always work in a disinterested manner,6,false
+86,fortuitous,occurring by happy chance rather than intentions,missing my trained turned out to be rather fortuitous since I met my childhood friend on the next train,6,false
+87,indecorous,improper,everyone was shocked when Geil wore the indecorous dress to the church party,4,false
+88,unseemly,not proper or appropriate,he acted in an unseemly manner,4,false
+89,polemic,controversy,the polemical decision caused a stir in the community,6,false
+90,aspiration,hope or ambition of achieving something,the needs and aspirations of people,4,false
+91,altruism,selfless concern for the well being of others,some may choose to work with vulnerable old people out of altruism,4,false
+92,concede,to admit; acknowledge,eventually she conceded that she over reacted,4,false
+93,fickle,given to sudden change; capricious,celebs try to appeal to the increasingly fickle public,6,false
+94,fanatical,having excessive enthusiasm and devotion to an idea; zealous,her husband was fanatical about cleanliness,6,false
+95,specious,deceptively pleasing,almost every image on the tv is specious and is not to be trusted,7,false
+96,elusive,difficult to catch or find or remember,success will ever more be elusive,4,false
+97,elated,ecstatically happy,"after the concert, I felt elated",5,false
+98,acolyte,assistant or a follower,she runs the department through a small group of acolytes,4,false
+99,martinet,a strict disciplinarian,Our care taker could not tolerate disobedience. She was a martinet,5,false
+100,sporadic,occurring at irregular intervals or only a few places,Zambia endured sporadic blackouts when the drought crippled their power generation,4,false
+101,tyrant,a cruel and oppressive ruler,the tyrant was deposed by popular demonstrations,5,false
+102,conscience,moral sense of right and wrong,he had a guilty conscience about his desires,4,false
+103,pervasive,spreading widely through an area or a group of people; rife,"Misinformation, hatred and offense are pervasive",4,false
+104,abridge,shorten; diminish,the introduction is abridged from the author's afterword to the novel,4,false
+105,circumscribe,restrict within limits,The minister's powers are circumscribed both by tradition and the organization of local government ,4,false
+106,conform,comply with rules or standards,the kitchen does not conform to hygiene regulations,4,false
+107,ostentation,excessive display of wealth and luxury,"the office was spacious, but without any display of ostentation",1,true
+108,singularity,unusual and distinctive nature; peculiarity,she believed in singularity of all traditions,4,false
+109,adulterate,to render something poorer by adding another substance; degrade,the brewer is said to adulterate his beer,4,false
+110,advocate,someone who publicly recommends or supports a particular cause or policy,he was untiring advocate of economic reform,5,false
+111,aggrandize,"increase power, wealth or reputation",Jack is a philanthropist who only supports causes that aggrandize him in the eyes of the world,5,false
+112,alacrity,liveliness and eagerness,he accepted with alacrity,4,false
+113,ambivalent,having mixed feelings or contradictory ideas; unsure,"Some loved her, some hated her. I was ambivalent about her",5,false
+114,ameliorate,make something (bad or unsatisfactory) better,He wanted to ameliorate the present suffering,5,false
+115,amenable,open and responsive to suggestion; easily persuaded,parents who have amenable children,4,false
+116,audacious,willingness to take bold risks; showing lack of respect,he made an audacious remark,4,false
+117,avaricious,having extreme greed for wealth or material gain,He showed indeed none of the avaricious temper so common among the politicians of the time,5,false
+118,banal,so lacking in originality as to be obvious and boring,"songs with banal, repeated words",4,false
+119,benign,gentle and kindly,his benign but firm manner,5,false
+120,brazen,bold and without shame,he went about his illegal business with a brazen assurance,6,false
+121,calumny,making a false statement to damage someone's reputation; slander,a change in the law would prevent the press from publishing calumny,4,false
+122,candid,truthful and straightforward; frank,his responses were remarkably candid,4,false
+123,castigate,criticize or punish someone/something severely,Health inspectors castigated the kitchen staff for poor standards,4,false
+124,caustic,sarcastic in scathing and bitter way; able to burn or corrode organic tissue by chemical reaction,The players were making caustic comments about the refereeing,4,false
+125,construe,to interpret or perceive in a particular way,his words could hardly be construed as an apology,4,false
+126,contrite,feeling or expressing remorse at the recognition that one has done wrong,After the realization she started talking in a contrite tone,5,false
+127,convoluted,extremely complex and difficult to follow,The movie is let down by a convoluted plot in which nothing really happens,5,false
+128,covet,greatly desire for something (especially belonging to another),I covet one of their smart bags,4,false
+129,craven,cowardly,Courage the craven dog,4,false
+130,decorum,behaviour in keeping with good taste and propriety,he had acted with utmost decorum,4,false
+131,deft,skillful in physical movement,the magician was quiet deft at his performance,4,false
+132,demur,raise objection or show reluctance,"normally she would have accepted the challenge, but she demurred",4,false
+133,derivative,imitative of the work of another; based on another source,an artist who is not in the slightest bit derivative,4,false
+134,desiccate,remove moisture from something,both the older growth and new vegetation were desiccated by months of relentless sun,4,false
+135,diatribe,a forceful and bitter verbal attack against someone or something,"In this long diatribe, you began to reveal yourself to me",4,false
+136,incredulous,unwilling or unable to believe something ,I was incredulous when he told me about the secret,5,false
+137,ingenuous,innocent and unsuspecting,"he eyed her with wide, ingenuous eyes",4,false
+138,abate,become less in amount or intensity ,the storm suddenly abated,5,false
+139,abjure,formally reject or disavow a formerly held belief,He abjured his earlier statements about religion,2,true
+140,anomalous,"deviating from what is standard, normal or expected",The researchers could not explain the anomalous test results ,5,false
+141,antipathy,a deep-seated feeling of aversion(dislike),His fundamental antipathy to capitalism,4,false
+142,arcane,understood by few; mysterious or secret,The elderly teacher had an arcane way of teaching mathematics,4,false
+143,arduous,involving or requiring strenuous effort; difficult and tiring,She undertook the arduous task of monitoring the elections,4,false
+144,artless,without effort; natural and simple,"With her artless look, the girl next door looked beautiful even though she had no make-up on and didn't style her hair",7,false
+145,ascetic,"characterized by severe self-descipline and abstention from all forms of indulgence, typically for religious reasons","an ascetic life of prayer, fasting and manual labour",6,false
+146,assuage,make (an unpleasant feeling) less intense,The letter assuaged the fears of most members,1,true
+147,betray,"unintensionally reveal; be evidence of; expose (a person, group, one's country) to danger by treacherously giving information to an enemy",She drew a deep breath that betrayed her indignation,6,false
+148,bucolic,relating to the pleasant aspects of the country side and country life,The church is lovely for its bucolic setting,4,false
 149,burgeon,begin to grow or increase rapidly; flourish,"The city's suburbs have burgeoned, sprawling out from the center",1,true
-150,cacophonous,"involving or producing a harsh, discordant mixture of sounds",the cacophonous sound of slot machines,3,false
-151,canonize,formally declare (a dead person) to be saint,He was the last English saint to be canonized prior to the Reformation,4,false
-152,censure,express severe disapproval of (someone or something) especially in a formal statement,the company was heavily censured by inspectors from the Department of Trade,3,false
-153,chicanery,use of tricks to deceive someone (usually to extract money from them),Let us expose the business of its financial chicanery and reveal how they waste our tax dollars,3,false
-154,coalesce,come together to form one mass or whole,The puddles have coalesced into shallow streams,4,false
-155,cogent,"(of an argument or case) clear, logical and convincing ",They put forward cogent arguments for British membership,2,true
-156,compelling,"evoking interest, attention, or admiration in a powerful irresistable way",The novel was so compelling that I couldn't put it down,4,false
-157,contend,compete with others in a struggle to achieve something; struggle,Local leaders have more real-world problems to contend with and more power to address them,3,false
-158,cosmopolitan,including from many different countries; (plant or animal) found all over the world,Immigration transformed the city into a cosmopolitan metropolis,3,false
-159,deference,polite submission and respect,he addressed her with deference due to age,5,false
-160,desultory,"lacking plan, purpose or enthusiasm","A few people were left, dancing in a desultory",2,true
-161,dilatory,slow to act; intended to cause delay,He had been dilatory in appointing a solicitor,0,true
-162,equivocate,use ambiguous language so as to conceal the truth or avoid commiting oneself,The government has equivocated too often in the past,4,false
-163,polarize,divide or cause to divide into two sharply contrasting groups or set of opinions or beliefs,public opinion has sharply polarized on the issue,4,false
-164,verbose,use or expressed in more words than are needed,Much academic language is obscure and verbose,3,false
-165,discordant,disagreeing or not in harmony,The operating principle of democracy is a balance of discordant qualities,3,true
-166,incongruous,not in harmony or keeping with the surrounding or other aspects of something,The coat looked incongruous with the black dress she wore underneath,2,true
-167,frivolous,not having any serious purpose or value,Students who consider test instructions to be frivolous often fail exams.,0,true
-168,provocative,"causing anger or another strong reaction, especially deliberately","He doesn't really mean that,he's just being deliberately provocative",3,false
-169,prevail,prove more or superior; widespread,"Even though our troops are tired and hungry, we will prevail against the enemy",3,false
-170,connoisseur,an expert judge in matters of taste,a connoisseur of music,3,false
-171,scourage,cause great suffering to,political methods used to scourage and oppress workers,1,true
-172,provision,providing or supplying something for use,The government is responsible for the provision of education for all the children,3,false
-173,impunity,freedom from punishment,the impunity enjoyed by military officers implicated in civilian killings,3,false
-174,ridicule,to laugh at someone in an unkind way,the theory was ridiculed and dismissed,5,false
-175,promulgate,promote or make widely known,these objectives have to be promulgated within the organization,3,true
-176,marginalize,treat as insignificant,"by removing religion from the public space, we marginalize it",4,false
-177,foresight,the ability to predict what will happen or be needed in the future,he had the foresight to check that his escape route was clear,4,false
-178,prescient,having or showing knowledge of events before they take place,"Her vocabulary may have become archaic, but her stance was prescient and brave",2,true
-179,serendipitous,occuring or discovered by chance in a happy or beneficial way,It provides the serendipitous opportunity to discover new fonts by just having them fill the page,3,true
-180,pretension,the claim or belief of being more important or more serious than there is reason for,He spoke about his achievements without pretension,3,false
-181,blemish,a small flaw that spoils the appearance of something,the girl's hands were without a blemish,2,true
+150,cacophonous,"involving or producing a harsh, discordant mixture of sounds",the cacophonous sound of slot machines,5,false
+151,canonize,formally declare (a dead person) to be saint,He was the last English saint to be canonized prior to the Reformation,1,true
+152,censure,express severe disapproval of (someone or something) especially in a formal statement,the company was heavily censured by inspectors from the Department of Trade,5,false
+153,chicanery,use of tricks to deceive someone (usually to extract money from them),Let us expose the business of its financial chicanery and reveal how they waste our tax dollars,5,false
+154,coalesce,come together to form one mass or whole,The puddles have coalesced into shallow streams,6,false
+155,cogent,"(of an argument or case) clear, logical and convincing ",They put forward cogent arguments for British membership,6,false
+156,compelling,"evoking interest, attention, or admiration in a powerful irresistable way",The novel was so compelling that I couldn't put it down,1,true
+157,contend,compete with others in a struggle to achieve something; struggle,Local leaders have more real-world problems to contend with and more power to address them,5,false
+158,cosmopolitan,including from many different countries; (plant or animal) found all over the world,Immigration transformed the city into a cosmopolitan metropolis,1,true
+159,deference,polite submission and respect,he addressed her with deference due to age,7,false
+160,desultory,"lacking plan, purpose or enthusiasm","A few people were left, dancing in a desultory",4,false
+161,dilatory,slow to act; intended to cause delay,He had been dilatory in appointing a solicitor,5,false
+162,equivocate,use ambiguous language so as to conceal the truth or avoid commiting oneself,The government has equivocated too often in the past,1,true
+163,polarize,divide or cause to divide into two sharply contrasting groups or set of opinions or beliefs,public opinion has sharply polarized on the issue,6,false
+164,verbose,use or expressed in more words than are needed,Much academic language is obscure and verbose,5,false
+165,discordant,disagreeing or not in harmony,The operating principle of democracy is a balance of discordant qualities,6,false
+166,incongruous,not in harmony or keeping with the surrounding or other aspects of something,The coat looked incongruous with the black dress she wore underneath,1,true
+167,frivolous,not having any serious purpose or value,Students who consider test instructions to be frivolous often fail exams.,5,false
+168,provocative,"causing anger or another strong reaction, especially deliberately","He doesn't really mean that,he's just being deliberately provocative",5,false
+169,prevail,prove more or superior; widespread,"Even though our troops are tired and hungry, we will prevail against the enemy",5,false
+170,connoisseur,an expert judge in matters of taste,a connoisseur of music,5,false
+171,scourage,cause great suffering to,political methods used to scourage and oppress workers,0,true
+172,provision,providing or supplying something for use,The government is responsible for the provision of education for all the children,1,true
+173,impunity,freedom from punishment,the impunity enjoyed by military officers implicated in civilian killings,1,true
+174,ridicule,to laugh at someone in an unkind way,the theory was ridiculed and dismissed,7,false
+175,promulgate,promote or make widely known,these objectives have to be promulgated within the organization,6,false
+176,marginalize,treat as insignificant,"by removing religion from the public space, we marginalize it",6,false
+177,foresight,the ability to predict what will happen or be needed in the future,he had the foresight to check that his escape route was clear,2,true
+178,prescient,having or showing knowledge of events before they take place,"Her vocabulary may have become archaic, but her stance was prescient and brave",1,true
+179,serendipitous,occuring or discovered by chance in a happy or beneficial way,It provides the serendipitous opportunity to discover new fonts by just having them fill the page,6,false
+180,pretension,the claim or belief of being more important or more serious than there is reason for,He spoke about his achievements without pretension,5,false
+181,blemish,a small flaw that spoils the appearance of something,the girl's hands were without a blemish,7,false
+182,approbation,approval or praise,A murmur of approbation and satisfaction ran through the crowd.,6,false
+183,disparate,essentially different in kind; not able to be compared,Chalk and cheese are disparate substances,5,false
+184,emulate,"match or surpass (a person or achievement), typically by imitation",most rulers wished to emulate Alexander the Great,6,false
+185,enervate,make (someone) feel drained of energy and vitality,The intense heat enervated us all,6,false
+186,ephemeral,lasting for a very short time,fashions are ephemeral: new ones regularly drive out the old,0,true
+187,fervid,"intensely enthusiastic or passionate, especially to an excessive degree",The politician spoke with a fervid intensity that made people want to vote for him,0,true
+188,garrulous,excessively talkative,"Desperate for peace and quiet, Amanda told the garrulous man sitting next to her to�""Shut up!""",6,false
+189,incendiary,tending to stir up conflict; designed to cause fires,"All weapons are strictly prohibited from the stadium, from small knives to incendiary devices",6,false
+190,inimical,tending to obstruct or harm,the policy was inimical to Britain's real interests,6,false
+191,intimate,state or make known,Mr Hutchison has intimated his decision to retire,6,false
+192,invigorate,give strength or energy,A brisk walk in the cool morning air always invigorates me,5,false
+193,mitigate,"make (something bad) less severe, serious, or painful",The doctor gave me medicines to mitigate the pain,6,false
+194,obsolete,no longer produced or used; out of date,the disposal of old and obsolete machinery,6,false
+195,opaque,hard or impossible to understand,technical jargon that was opaque to her,0,true
+196,paradigmatic,serving as a typical example of something,his biography is paradigmatic of the experiences of this generation,7,false
+197,pedantic,excessively concerned with minor details or rules,"his analyses are careful and even painstaking, but never pedantic",4,false
+198,placid,"not easily upset or excited; calm and peaceful, with little movement or activity",the placid waters of a small lake,6,false
+199,polemical,of or involving strongly critical or disputatious writing or speech,A polemical note is sounded in the unsigned preface,6,false
+200,precipitate,"cause to happen suddenly, unexpectedly or prematurely",the incident precipitated a political crisis,4,false
+201,profundity,great depth of insight or knowledge,My psychologist's profundity has talked me through some of my darkest moments,0,true
+202,prudent,acting with or showing care and thought for the future,no prudent money manager would authorize a loan without first knowing its purpose,4,false
+203,punctilious,showing great attention to detail or correct behaviour,he was punctilious in providing every amenity for his guests,0,true
+204,recondite,little known; abstruse,the book is full of recondite information,0,true
+205,scrupulous,"careful thorough, and extremely attentive to details",the research has been carried out with scrupulous attention to detail,0,true
+206,tranquil,free from disturbance; calm,I am going to bed with a happy and tranquil mind,7,false
+207,vacillate,waver between different opinions or actions; be indecisive,I vacillated between teaching and journalism,6,false
+208,aloof,not friendly or forthcoming; cool and distant,they were courteous but faintly aloof,6,false
+209,clangor,a continuous loud banging or ringing sound,he went deaf because of the clangour of the steam hammers,6,false
+210,conventional,based on or in accordance with what is generally done or believed,Most food tastes better when it is cooked in a conventional oven,6,false
+211,debunk,expose the falseness or hollowness of an idea or belief,she debunks all the usual rubbish about acting,6,false
+212,diminutive,extremely or unusually small,She has diminutive hands for an adult,6,false
+213,discernible,"able to be recognized, identified or distinguished","Though the differences were often quite subtle, they were still discernible enough by tribesmen",6,false
+214,enigmatic,difficult to interpret or understand; mysterious,he took the money with an enigmatic smile,6,false
+215,estranged,no longer close or affectionate to someone,Harriet felt more estranged from her daughter than ever,6,false
+216,extravagant,lacking restraint in spending money or using resources,The couple lived a very simple life with no need for extravagant purchases,6,false
+217,fanciful,over-imaginative and unrealistic,"Because she had a wild imagination, she loved to create fanciful stories in her spare time.",4,false
+218,heterogeneous,diverse in character or content,This consists of a medley of documents of the most heterogeneous character.,6,false
+219,imperious,arrogant and domineering,The imperious manner of Andros made him many enemies.,5,false
+220,impertinent,without respect; rude; irrelevent,"I hope you will excuse me for doing what is only my duty, although it may appear impertinent",5,false
+221,invasive,tending to spread very quickly and undesirably or harmfully,patients suffering from invasive cancer,6,false
+222,irresolute,showing or feeling hesistancy; uncertain,she stood irresolute outside his door,5,false
+223,laudable,deserving praise,"laudable though the aim might be, the results have been criticized",6,false
+224,lax,"not sufficiently strict, severe or careful; relaxed",Never let go of that privacy or be lax with your security,6,false
+225,panache,flamboyant confidence of style or manner,He entered London society with great panache,6,false
+226,plodding,slow-moving and unexciting,I could hear my roommate plodding up the steps to our apartment,6,false
+227,prosaic,lacking imaginativeness or originality; commonplace,A very prosaic explanation of this nocturnal noise is given by Judson,5,false
+228,remedial,giving or intended as a remedy or cure,Officials have pledged remedial action to repair damaged bridges,7,false
+229,restive,"unable to remain still, silent, or submissive, especially because of boredom or dissatisfaction",the crowd had been waiting for hours and many were becoming restive,6,false
+230,stigmatize,describe or regard as worthy of disgrace or great disapproval,the institution was stigmatized as a last resort for the destitute,6,false
+231,undermine,"lessen the effectiveness, power, or ability of, especially gradually or insidiously",this could undermine years of hard work,6,false
+232,utterly,completely and without qualification; absolutely,He found the experience utterly humiliating,6,false
+233,weary,tired,"he gave a long, weary sigh",6,false
+234,zealous,having great energy or enthusaism in pursuit of a cause or an objective,The police were zealous in their pursuit of the criminals,6,false
+235,aesthetic,concerned with beauty or the appreciation of beauty,the pictures give great aesthetic pleasure,5,false
+236,affectation,"behaviour , speech or writing that is pretentious and designed to impress","She's beautiful, truthful, and hilarious, without vanity or affectation , exceptionally clever",4,false
+237,alleviate,"making (suffering, deficiency or a problem) less severe","he couldn't prevent her pain, only alleviate it",5,false
+238,analogous,"comparable in certain respects, typically in a way which makes clearer the nature of the things compared","""they saw the relationship between a ruler and his subjects as�analogous to�that of father and children",5,false
+239,bolster,support or strengthen,the fall in interest rates is starting to bolster confidence,5,false
+240,chauvinistic,feeling or displaying aggressive or exaggerated patriotism,"The idea was absurd, even for someone as chauvinistic as Romas",4,false
+241,dissemble,conceal or disguise one's true feelings or beliefs,"an honest, sincere person with no need to dissemble",4,false
+242,dogged,having or showing tenacity and grim persistence,success required dogged determination,5,false
+243,dupe,deceive; trick,the newspaper was duped into publishing an untrue story,6,false
+244,empirical,based on observation or experience rather than theory or pure logic,they provided considerable empirical evidence to support their argument,5,false
+245,engender,"cause or give rise to (a feeling, situation or condition)",the issue engendered continuing controversy,4,false
+246,entitiled,believing oneself to be inherently deserving of privileges or special treatment,kids who feel so entitled and think the world will revolve around them,5,false
+247,pertinacious,holding firmly to an opinion or a course of action,he worked with a pertinacious resistance to interruptions,4,false
+248,probity,the quality of having strong moral principles; honesty and decency ,He asserted his innocence and his financial probity,3,true
+249,proliferate,increase rapidly in number; multiply,the science fiction magazines which proliferated in the 1920s,3,true
+250,spurious,false or fake,separating authentic and spurious claims,4,false
+251,subjective,"based on or influenced by personal feelings, tastes or opinion",We know that taste in art is a subjective matter,5,false
+252,subvert,undermine the power and authority of (an established system); overthrow,The rebel army is attempting to subvert the government,5,false
+253,timorous,nervous or lacking confidence,The vast majority are most likely too timorous or too intimidated to do anything about it,4,false
+254,tortuous,full of twists and turns; excessively lengthy and complex,the route is remote and tortuous,4,false
+255,tractable,easy to control or influence,"she has always been tractable and obedient, even as a child",5,false
+256,transient,lasting only for a short time; impermanent,here is a transient population of thousands of visitors during the year,5,false
+257,ubiquitous,"present, appearing or found everywhere",his ubiquitous influence was felt by all the family,6,false
+258,venal,corrupt,local customs officers are notoriously venal,5,false
+259,venerate,regard with great respect,Robert Burns is Scotland's most venerated poet,4,false
+260,arbitrary,based on random choice or personal whim; unrestrained and autocratic in the use of authority,Arbitrary arrests and detention without trial were common,2,false
+261,archaic,very old or old-fashioned,prisons are run on archaic methods,2,false
+262,clamorous,making a loud and confused noise; expressing or characterized by strong protests or demands,"they were active, and clamorous, and in subtle and not so subtle ways they corrupted the intellectual atmosphere",2,false
+263,vehement,"showing strong feeling; forceful, passionate, or intense",her voice was low but vehement,2,false
+264,dearth,a scarcity or lack of something,there is a dearth of evidence,2,false
+265,explicable,able to be accounted for or understood,His behaviour is explicable in the light of his recent illness,2,false
+266,hyperbole,exaggerated statements or claims not meant to be taken literally,"During the hurricane, it seemed as though the hyperbole, raining cats and dogs, was almost accurate",0,true
+267,immutable,unchanging over time or unable to be changed,The actions of men are subject to general immutable laws expressed in statistics,2,false
+268,indefatigable,persisting tirelessly,an indefatigable defender of human rights,2,false
+269,indolent,lazy; causing little or no pain,Evidently Peter was determined to tear his son away from a life of indolent ease,0,true
+270,insular,"ignorant of or unintrested in cultures, ideas or people outside one's own experience","At the moment, I'm a bit insular in my music tastes",2,false
+271,intransigent,unwilling or refusing to change one's view or to change about something,"her father had tried persuasion, but she was intransigent",0,true
+272,intrepid,fearless; adventurous,"Our speaker is an experienced, intrepid navigator who has sailed his boat through the Baltic sea to enter the Russian system",0,true
+273,irreverent,showing a lack of respect for people or things that are generally taken seriously,Taylor combined great knowledge with an irreverent attitude to history,2,false
+274,loathe,feeling intense dislike or disgust for,"I loathe these horrible roads, but I love the places they take you",2,false
+275,malign,evil in nature; speak about (someone) in a spitefully critical manner,she had a strong and malign influence,1,true
+276,malleable,easily influenced,they are as malleable and easily led as sheep,2,false
+277,neophyte,novice; a new convert to a religion,four-day cooking classes are offered to neophytes and experts,2,false
+278,plastic,not genuine; artificial or unnatural; easily shaped or moulded,rendering the material more plastic ,2,false
+279,platitude,"a remark or statement, especially one with a moral content, that has been used too often to be interesting or thoughtful",he masks his disdain for her with platitudes about how she should believe in herself more,2,false
+280,pristine,in its original condition; unspoilt,pristine copies of an early magazine,2,false
+281,reproach,express to (someone) one's disapproval of or disappointment in their actions,her friends reproached her for not thinking enough about her family,0,true
+282,robust,strong and healthy; vigorous; (of wine or food) strong and rich in flavour or smell,No handshake for Julie; she gave each of us a robust hug,2,false
+283,salubrious,healthy; (of a place) pleasant,odours of far less salubrious origin,0,true
+284,sanction,a threatened penalty for disobeying a law or rule; official permission of approval for an action,a range of sanctions aimed at deterring insider abuse,2,false
+285,sedulous,showing dedication and diligence,he watched himself with the most sedulous care,0,true
+286,soporific,tending to induce drowsiness or sleep,the motion of the train had a somewhat soporific effect,0,true
+287,stern,"serious and unrelenting, especially in the assertion of authority and exercise of discipline",She issued a stern warning to those who persist in violence,2,false
+288,tendentious,"expressing or promoting a particular cause or point of view, especially a controversial one",The president was tendentious on his plan for the company and would not listen to other options,2,false

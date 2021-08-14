@@ -2,6 +2,8 @@ package com.grevocab;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 
 public class FileReadWrite {
@@ -9,6 +11,8 @@ public class FileReadWrite {
     private String headerLine;
 
     private HashMap<Integer, Word> wordMap = new HashMap<>();
+
+    private ArrayList<Integer> markedWordsIdList = new ArrayList<>();
 
     public FileReadWrite(String wordsFile) {
         this.WORDS_FILE = wordsFile;
@@ -42,6 +46,11 @@ public class FileReadWrite {
         }
     }
 
+    public ArrayList<Integer> getMarkedWordsIdList(){
+        Collections.shuffle(markedWordsIdList);
+        return markedWordsIdList;
+    }
+
     private Word readWord(String line){
         String[] data = line.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
         int wordId = Integer.parseInt(data[0]);
@@ -51,6 +60,10 @@ public class FileReadWrite {
         int weight = Integer.parseInt(data[4]);
         boolean marked = Boolean.parseBoolean(data[5]);
 
+        if(marked){
+            markedWordsIdList.add(wordId);
+        }
+
         return new Word(wordId, word, definition, example, weight, marked);
     }
 
@@ -59,6 +72,4 @@ public class FileReadWrite {
                 word.getExample(), String.valueOf(word.getWeight()), String.valueOf(word.isMarked()));
          return line + "\n";
     }
-
-
 }

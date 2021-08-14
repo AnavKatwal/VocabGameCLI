@@ -27,16 +27,26 @@ public abstract class Game {
     int firstWord;
     int lastWord;
 
-    public Game(){
+    ArrayList<Integer> incorrectWordsIdList;
+
+    ArrayList<Integer> markedWordsIdList;
+    boolean onlyMarked;
+
+    public Game(boolean onlyMarked){
         wordMap = fileReadWrite.readFromFile();
         firstWord = 1;
         lastWord = wordMap.size();
+        this.markedWordsIdList = fileReadWrite.getMarkedWordsIdList();
+        this.incorrectWordsIdList = new ArrayList<>();
+        this.onlyMarked = onlyMarked;
     }
 
     public Game(int firstWord, int lastWord){
-        this();
+        this(false);
         this.firstWord = firstWord;
-        this.lastWord = lastWord;
+        if(!(lastWord == 0)) {
+            this.lastWord = lastWord;
+        }
     }
 
     ArrayList<Integer> getRandomIdList(){
@@ -44,12 +54,18 @@ public abstract class Game {
         method to get random list of wordId for the words to play
          */
         ArrayList<Integer> randomIdList = new ArrayList<>();
-        int range = lastWord - firstWord + 1;
 
-        while(randomIdList.size() < range){
-            int randomId = random.nextInt(range) + firstWord; // to contain the range within firstWord and lastWord
-            if(!randomIdList.contains(randomId)){
-                randomIdList.add(randomId);
+        if(onlyMarked){
+            // play with marked words only
+            randomIdList = markedWordsIdList;
+        } else{
+            int range = lastWord - firstWord + 1;
+
+            while (randomIdList.size() < range) {
+                int randomId = random.nextInt(range) + firstWord; // to contain the range within firstWord and lastWord
+                if (!randomIdList.contains(randomId)) {
+                    randomIdList.add(randomId);
+                }
             }
         }
         return randomIdList;
@@ -86,6 +102,7 @@ public abstract class Game {
         } else {
             word.setMarked(true);
             word.setWeight(0);  // marking the word also sets the weight to 0.
+            addToMarkedList(word.getWordId());
             System.out.printf(ANSI_RESET + "Word %s has been marked \n", word.getWord());
         }
     }
@@ -108,17 +125,15 @@ public abstract class Game {
         /*
         displays the words whose marked field is set to true. the word along with the definition is displayed.
          */
-        int count=0;
-        System.out.println(ANSI_BOLD + ANSI_UNDERLINE + "Marked words:" + ANSI_RESET + "\n");
-        for(int id : wordMap.keySet()){
-            Word word = wordMap.get(id);
-            if(word.isMarked()){
-                System.out.printf("\t%s : %s \n \n",ANSI_RESET + ANSI_YELLOW + ANSI_BOLD + word.getWord(), ANSI_RESET + word.getDefinition().replace("\"", ""));
+        if(!this.markedWordsIdList.isEmpty()) {
+
+            System.out.printf(ANSI_BOLD + ANSI_UNDERLINE + "Marked words: (%d/%s)\n" + ANSI_RESET + "\n", markedWordsIdList.size(), wordMap.size() );
+
+            for(int id: markedWordsIdList){
+                Word word = wordMap.get(id);
+                System.out.printf("\t%s : %s \n \n", ANSI_RESET + ANSI_YELLOW + ANSI_BOLD + word.getWord(), ANSI_RESET + word.getDefinition().replace("\"", ""));
             }
-            count ++;
-        }
-        if(count == 0){
-            System.out.println("No words have been marked.");
+
         }
     }
 
@@ -126,7 +141,35 @@ public abstract class Game {
         System.out.println("********************************** End of game *********************************");
         System.out.printf(ANSI_GREEN + "Total correct answers = %d \t" + ANSI_RED + "Total wrong answers = %d \t" + ANSI_RESET + ANSI_BOLD +
                 "Total attempted = %d / %d \n", score, totalAnswered-score, totalAnswered, wordMap.size());
+        showIncorrect();
+        System.out.println("********************************************************************************");
         showMarked();
         System.out.println("********************************************************************************");
+    }
+
+    void showIncorrect(){
+        /*
+        displays the words that the player gave wrong or no answers in the round
+         */
+        if(!incorrectWordsIdList.isEmpty()){
+            System.out.println(ANSI_RED + ANSI_BOLD + "Wrong answers / Didn't attempt:" + ANSI_RESET + "\n");
+            for(int id: incorrectWordsIdList){
+                Word word = wordMap.get(id);
+
+                System.out.printf("\t%s : %s \n \n", ANSI_PURPLE + word.getWord() + ANSI_RESET, word.getDefinition().replace("\"", ""));
+            }
+        }
+    }
+
+    void addToIncorrectList(int wordId){
+        if(!incorrectWordsIdList.contains(wordId)){
+            incorrectWordsIdList.add(wordId);
+        }
+    }
+
+    void addToMarkedList(int wordId){
+        if(!markedWordsIdList.contains(wordId)){
+            markedWordsIdList.add(wordId);
+        }
     }
 }

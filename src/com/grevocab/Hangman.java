@@ -8,8 +8,8 @@ public class Hangman extends Game{
 
     private final String RE_ANSWER = ANSI_CYAN + "Answer in \"y\" or \"n\" only";
 
-    public Hangman() {
-        super();
+    public Hangman(boolean onlyMarked) {
+        super(onlyMarked);
     }
 
     public Hangman(int firstWord, int lastWord) {
@@ -17,8 +17,13 @@ public class Hangman extends Game{
     }
 
     public void play() {
-
         ArrayList<Integer> randomIdList = getRandomIdList();
+
+        if(randomIdList.isEmpty()){
+            System.out.println(ANSI_CYAN + "No words in the list!!!" + ANSI_RESET);
+            return;
+        }
+
         int score = 0;
         int totalAnswered = 0;
 
@@ -53,7 +58,9 @@ public class Hangman extends Game{
             if (completed){
                 System.out.printf(ANSI_GREEN + "Answer is: %s\n", ANSI_RESET + word.getWord());
                 score++;
+
             } else {
+                incorrectWordsIdList.add(wordId);
                 System.out.printf(ANSI_BOLD + ANSI_RED + "Answer is: %s\n", ANSI_RESET + ANSI_BOLD + word.getWord());
             }
             totalAnswered++;
@@ -139,7 +146,7 @@ public class Hangman extends Game{
         while (true) {
             try {
                 String input = s.nextLine().toLowerCase();
-                if (input.length() > 1) {
+                if (input.length() != 1) {
                     System.out.println(ANSI_CYAN + "Enter only one alphabet");
                 } else {
                     char alphabet = input.charAt(0);
