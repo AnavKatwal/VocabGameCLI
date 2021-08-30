@@ -6,7 +6,8 @@ public class Word {
     private final String definition;
     private final String example;
     private int weight;
-    private boolean marked;
+    private boolean quizMarked;
+    private boolean hangmanMarked;
 
     public Word(int wordId, String word, String definition, String example) {
         this.wordId = wordId;
@@ -14,7 +15,8 @@ public class Word {
         this.definition = definition;
         this.example = example;
         this.weight = 0;
-        this.marked = false;
+        this.quizMarked = false;
+        this.hangmanMarked = false;
     }
 
     public Word(int wordId, String word, String definition, String example, int weight) {
@@ -23,16 +25,18 @@ public class Word {
         this.definition = definition;
         this.example = example;
         this.weight = weight;
-        this.marked = false;
+        this.quizMarked = false;
+        this.hangmanMarked = false;
     }
 
-    public Word(int wordId, String word, String definition, String example, int weight, boolean marked) {
+    public Word(int wordId, String word, String definition, String example, int weight, boolean quizMarked, boolean hangmanMarked) {
         this.wordId = wordId;
         this.word = word;
         this.definition = definition;
         this.example = example;
         this.weight = weight;
-        this.marked = marked;
+        this.quizMarked = quizMarked;
+        this.hangmanMarked = hangmanMarked;
     }
 
     public void increaseWeight(){
@@ -43,8 +47,12 @@ public class Word {
         this.weight--;
     }
 
-    public void setMarked(boolean marked) {
-        this.marked = marked;
+    public void setQuizMarked(boolean quizMarked) {
+        this.quizMarked = quizMarked;
+    }
+
+    public void setHangmanMarked(boolean hangmanMarked){
+        this.hangmanMarked = hangmanMarked;
     }
 
     public void setWeight(int weight) {
@@ -71,8 +79,11 @@ public class Word {
         return weight;
     }
 
-    public boolean isMarked() {
-        return marked;
+    public boolean isQuizMarked() {
+        return quizMarked;
     }
 
+    public boolean isHangmanMarked(){
+        return hangmanMarked;
+    }
 }

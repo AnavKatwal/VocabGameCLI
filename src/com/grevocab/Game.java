@@ -1,9 +1,6 @@
 package com.grevocab;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Random;
+import java.util.*;
 
 public abstract class Game {
     static final String ANSI_RESET = "\u001B[0m";
@@ -29,27 +26,39 @@ public abstract class Game {
 
     ArrayList<Integer> incorrectWordsIdList;
 
-    ArrayList<Integer> markedWordsIdList;
-    boolean onlyMarked;
+    ArrayList<Integer> quizMarkedWordsIdList;
+    ArrayList<Integer> hangmanMarkedWordsIdList;
+
+    boolean onlyMarked; // true if to play with marked words only
 
     public Game(boolean onlyMarked){
         wordMap = fileReadWrite.readFromFile();
         firstWord = 1;
         lastWord = wordMap.size();
-        this.markedWordsIdList = fileReadWrite.getMarkedWordsIdList();
+
+        this.quizMarkedWordsIdList = fileReadWrite.getQuizMarkedWordsIdList();
+        this.hangmanMarkedWordsIdList = fileReadWrite.getHangmanMarkedWordsIdList();
+
         this.incorrectWordsIdList = new ArrayList<>();
         this.onlyMarked = onlyMarked;
     }
 
     public Game(int firstWord, int lastWord){
         this(false);
+
         this.firstWord = firstWord;
         if(!(lastWord == 0)) {
             this.lastWord = lastWord;
         }
     }
 
-    ArrayList<Integer> getRandomIdList(){
+    abstract void addToMarkedList(int wordId);
+
+    abstract void markWord(Word word);
+
+    abstract void unmarkWord(Word word);
+
+    ArrayList<Integer> getRandomIdList(ArrayList<Integer> markedWordsIdList){
         /*
         method to get random list of wordId for the words to play
          */
@@ -57,7 +66,7 @@ public abstract class Game {
 
         if(onlyMarked){
             // play with marked words only
-            randomIdList = markedWordsIdList;
+            randomIdList = new ArrayList<>(markedWordsIdList);
         } else{
             int range = lastWord - firstWord + 1;
 
@@ -92,40 +101,12 @@ public abstract class Game {
         return randomIdList;
     }
 
-    void markWord(Word word){
-        /*
-        set the marked field of a word to true if not already. marked words are displayed at the end of the game
-        to see which words the player struggles with. the marked field is saved in the csv file as well.
-         */
-        if(word.isMarked()) {
-            System.out.println(ANSI_RESET + "Word has already been marked.");
-        } else {
-            word.setMarked(true);
-            word.setWeight(0);  // marking the word also sets the weight to 0.
-            addToMarkedList(word.getWordId());
-            System.out.printf(ANSI_RESET + "Word %s has been marked \n", word.getWord());
-        }
-    }
 
-    void unmarkWord(Word word){
-        /*
-        reset the marked field of a word to false if true previously. a marked word is unmarked when
-        the weight of 4 is gained on the word. the marked field is saved in the csv file as well
-         */
-        if(!word.isMarked()) {
-            System.out.println(ANSI_RESET + "Word has not been marked. Press \"m\" and then enter to mark");
-        }
-        else {
-            word.setMarked(false);
-            System.out.printf(ANSI_RESET + "Word %s has been unmarked \n", word.getWord());
-        }
-    }
-
-    void showMarked(){
+    void showMarked(ArrayList<Integer> markedWordsIdList){
         /*
         displays the words whose marked field is set to true. the word along with the definition is displayed.
          */
-        if(!this.markedWordsIdList.isEmpty()) {
+        if(!markedWordsIdList.isEmpty()) {
 
             System.out.printf(ANSI_BOLD + ANSI_UNDERLINE + "Marked words: (%d/%s)\n" + ANSI_RESET + "\n", markedWordsIdList.size(), wordMap.size() );
 
@@ -137,13 +118,13 @@ public abstract class Game {
         }
     }
 
-    void displayScore(int score, int totalAnswered){
+    void displayScore(int score, int totalAnswered, ArrayList<Integer> markedWordsIdList){
         System.out.println("********************************** End of game *********************************");
         System.out.printf(ANSI_GREEN + "Total correct answers = %d \t" + ANSI_RED + "Total wrong answers = %d \t" + ANSI_RESET + ANSI_BOLD +
                 "Total attempted = %d / %d \n", score, totalAnswered-score, totalAnswered, wordMap.size());
         showIncorrect();
         System.out.println("********************************************************************************");
-        showMarked();
+        showMarked(markedWordsIdList);
         System.out.println("********************************************************************************");
     }
 
@@ -164,12 +145,6 @@ public abstract class Game {
     void addToIncorrectList(int wordId){
         if(!incorrectWordsIdList.contains(wordId)){
             incorrectWordsIdList.add(wordId);
-        }
-    }
-
-    void addToMarkedList(int wordId){
-        if(!markedWordsIdList.contains(wordId)){
-            markedWordsIdList.add(wordId);
         }
     }
 }

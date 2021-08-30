@@ -4,10 +4,6 @@ import java.util.*;
 
 public class Hangman extends Game{
 
-    private final Random random = new Random();
-
-    private final String RE_ANSWER = ANSI_CYAN + "Answer in \"y\" or \"n\" only";
-
     public Hangman(boolean onlyMarked) {
         super(onlyMarked);
     }
@@ -17,7 +13,7 @@ public class Hangman extends Game{
     }
 
     public void play() {
-        ArrayList<Integer> randomIdList = getRandomIdList();
+        ArrayList<Integer> randomIdList = getRandomIdList(hangmanMarkedWordsIdList);
 
         if(randomIdList.isEmpty()){
             System.out.println(ANSI_CYAN + "No words in the list!!!" + ANSI_RESET);
@@ -27,7 +23,10 @@ public class Hangman extends Game{
         int score = 0;
         int totalAnswered = 0;
 
+        boolean quit = false;
+
         for(int wordId: randomIdList){
+
             Word word = wordMap.get(wordId);
             char[] charArray = word.getWord().toCharArray();
 
@@ -37,11 +36,14 @@ public class Hangman extends Game{
             showBlanks(charArray, selectedCharacters);
 
             int remainingLives = 3;
-            boolean completed;
+            boolean completed = false;
             do {
 
                 char alphabet = getAlphabet();
-                if (selectedCharacters.contains(alphabet)) {
+                if(alphabet == 0){
+                    quit = true;
+                    break;
+                } else if (selectedCharacters.contains(alphabet)) {
                     System.out.printf(ANSI_CYAN + "\"%s\" has been tried already!!! \n", alphabet);
                 } else {
                     if (!checkAlphabet(alphabet, charArray)) {
@@ -58,9 +60,14 @@ public class Hangman extends Game{
             if (completed){
                 System.out.printf(ANSI_GREEN + "Answer is: %s\n", ANSI_RESET + word.getWord());
                 score++;
+                word.increaseWeight();
+                if(word.isHangmanMarked() && word.getWeight() > 3){    // unmark the word if score more than 3 is gained
+                    unmarkWord(word);
+                }
 
             } else {
                 incorrectWordsIdList.add(wordId);
+                word.setWeight(0);
                 System.out.printf(ANSI_BOLD + ANSI_RED + "Answer is: %s\n", ANSI_RESET + ANSI_BOLD + word.getWord());
             }
             totalAnswered++;
@@ -68,9 +75,10 @@ public class Hangman extends Game{
             if(wantToMark(word)){
                 markWord(word);
             }
-            if(!stillWantToPlay()) break;
+            if(quit) break;
+            System.out.println("================================================================================");
         }
-        displayScore(score, totalAnswered);
+        displayScore(score, totalAnswered, hangmanMarkedWordsIdList);
         fileReadWrite.writeToFile(wordMap);
     }
 
@@ -86,26 +94,9 @@ public class Hangman extends Game{
             } else if(input.equals("n")){
                 return false;
             } else {
-                System.out.println(RE_ANSWER);
+                System.out.println(ANSI_CYAN + "Answer in \"y\" or \"n\" only" + ANSI_RESET);
             }
         }
-    }
-
-    private boolean stillWantToPlay(){
-        Scanner s = new Scanner(System.in);
-        System.out.println(ANSI_RESET + "Do you want to play again? (y/n)");
-
-        while(true){
-            String input = s.nextLine().toLowerCase();
-            if(input.equals("y")){
-                return true;
-            } else if(input.equals("n")){
-                return false;
-            } else {
-                System.out.println(RE_ANSWER);
-            }
-        }
-
     }
 
     private boolean checkIfAllCompleted(char[] charArray, ArrayList<Character> selectedCharacters){
@@ -141,24 +132,70 @@ public class Hangman extends Game{
 
     private char getAlphabet() {
         Scanner s = new Scanner(System.in);
+        char alphabet;
 
-        System.out.print(ANSI_RESET + "Enter an alphabet: ");
+        System.out.print(ANSI_RESET + "Enter an alphabet (or \"quit\" to QUIT): ");
         while (true) {
             try {
                 String input = s.nextLine().toLowerCase();
                 if (input.length() != 1) {
-                    System.out.println(ANSI_CYAN + "Enter only one alphabet");
+                    if(input.equalsIgnoreCase("quit")){
+                        alphabet = 0;
+                        break;
+                    }
+                    System.out.println(ANSI_CYAN + "Enter only one alphabet" + ANSI_RESET);
                 } else {
-                    char alphabet = input.charAt(0);
+                    alphabet = input.charAt(0);
                     if (alphabet > 122 || alphabet < 97) {
-                        System.out.println(ANSI_CYAN + "Only alphabets are allowed");
+                        System.out.println(ANSI_CYAN + "Only alphabets are allowed" + ANSI_RESET);
                     } else {
                         return alphabet;
                     }
                 }
             } catch (NoSuchElementException e) {
-                e.printStackTrace();
+                System.out.println(ANSI_CYAN + "No such element, try again" + ANSI_RESET);
             }
+        }
+        return alphabet;
+    }
+
+    @Override
+    void markWord(Word word) {
+        /*
+        sets the hangmanMarked field of a word to true if not already. The quiz game and the hangman game have
+        separate marked fields. Marked words are displayed at the end of the game to see which words the
+        player struggles with. the marked fields are saved in the csv file as well.
+         */
+        if (word.isHangmanMarked()) {
+            System.out.println(ANSI_RESET + "Word has already been marked.");
+        } else {
+            word.setHangmanMarked(true);
+            word.setWeight(0);  // marking the word also sets the weight to 0.
+            addToMarkedList(word.getWordId());
+            System.out.printf(ANSI_RESET + "Word %s has been marked \n", word.getWord());
+        }
+    }
+
+    @Override
+    void unmarkWord(Word word){
+        /*
+        reset the hangmanMarked field of a word to false if true previously. a hangmanMarked word is unmarked when
+        the weight of 4 is gained on the word. the marked fields are saved in the csv file as well
+         */
+        if(!word.isHangmanMarked()) {
+            System.out.println(ANSI_RESET + "Word has not been marked. Press \"m\" and then enter to mark");
+        }
+        else {
+            word.setHangmanMarked(false);
+            hangmanMarkedWordsIdList.remove(Integer.valueOf(word.getWordId()));
+            System.out.printf(ANSI_RESET + "Word %s has been unmarked \n", word.getWord());
+        }
+    }
+
+    @Override
+    void addToMarkedList(int wordId) {
+        if(!hangmanMarkedWordsIdList.contains(wordId)){
+            hangmanMarkedWordsIdList.add(wordId);
         }
     }
 }

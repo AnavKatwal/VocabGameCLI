@@ -6,8 +6,6 @@ public class QuizGame extends Game{
 
     private final int OPTIONS_QUANTITY = 5;
 
-    private Random random = new Random();
-
     public QuizGame(boolean onlyMarked) {
         super(onlyMarked);
     }
@@ -17,39 +15,39 @@ public class QuizGame extends Game{
     }
 
     public void play(){
-        ArrayList<Integer> randomIdList = getRandomIdList();
+        ArrayList<Integer> randomIdList = getRandomIdList(quizMarkedWordsIdList);
 
         if(randomIdList.isEmpty()){
             System.out.println(ANSI_CYAN + "No words in the list !!!" + ANSI_RESET);
             return;
         }
 
-        boolean exit = false;
+        boolean quit = false;
 
+        int count = 0;
         int score = 0;
         int totalAnswered = 0;
 
         for(int wordId: randomIdList) {
-            if (exit) break;
-
-            int randomSeed = random.nextInt(5000);
-            random = new Random(randomSeed);
+            if (quit) break;
 
             Word word = wordMap.get(wordId);
             String ansiValue;
 
-            if (word.isMarked()) {
+            if (word.isQuizMarked()) {
                 ansiValue = ANSI_BOLD + ANSI_YELLOW;    // setting yellow bold font for marked words
             } else {
                 ansiValue = ANSI_BOLD;  // setting bold font for unmarked words
             }
-            System.out.printf(ANSI_RESET + "Word: %s \n", ansiValue + word.getWord());
+
+            count++;
+            System.out.printf(ANSI_RESET + "%d. Word: %s \n", count, ansiValue + word.getWord());
 
             // create random list of options index
             ArrayList<Integer> optionsIndexList = getRandomIdList(word, OPTIONS_QUANTITY);
 
             printOptions(optionsIndexList);
-            boolean reAsk = false;
+            boolean reAsk;
             do {
                 int answer = getAnswer();
                 if(answer == -2){
@@ -58,7 +56,7 @@ public class QuizGame extends Game{
                 } else {
                     if (answer == 0) {   // value returned from getAnswer() if user choose to quit
                         addToIncorrectList(wordId);
-                        exit = true;
+                        quit = true;
                     } else if (answer == -1) {
                         markWord(word);
                         addToIncorrectList(wordId);
@@ -73,7 +71,7 @@ public class QuizGame extends Game{
                             System.out.println(ANSI_GREEN + ANSI_BOLD + "Right answer");
                             word.increaseWeight();
 
-                            if (word.isMarked() && word.getWeight() > 3) {
+                            if (word.isQuizMarked() && word.getWeight() > 3) {
                                 unmarkWord(word);   // unmark a previously marked word after a weight of 4 or more is gained
                             }
                             score++;
@@ -89,7 +87,7 @@ public class QuizGame extends Game{
             } while(reAsk);
             System.out.println(ANSI_RESET + "================================================================================");
         }
-        displayScore(score, totalAnswered);
+        displayScore(score, totalAnswered, quizMarkedWordsIdList);
         fileReadWrite.writeToFile(wordMap);
     }
 
@@ -151,6 +149,47 @@ public class QuizGame extends Game{
     }
 
     private void printExample(Word word){
-        System.out.printf(ANSI_BOLD + "Example:" + ANSI_RESET + " %s \n", word.getExample());
+        System.out.printf(ANSI_BOLD + "Example:" + ANSI_RESET + " %s \n", word.getExample().replace("\"", ""));
+    }
+
+    @Override
+    void markWord(Word word) {
+        /*
+        set the quizMarked field of a word to true if not already. The quiz game and the hangman game have
+        separate marked fields. Marked words are displayed at the end of the game to see which words the
+        player struggles with. the marked fields are saved in the csv file as well.
+         */
+        if (word.isQuizMarked()) {
+            System.out.println(ANSI_RESET + "Word has already been marked.");
+        } else {
+            word.setQuizMarked(true);
+            word.setWeight(0);  // marking the word also sets the weight to 0.
+            addToMarkedList(word.getWordId());
+            System.out.printf(ANSI_RESET + "Word %s has been marked \n", word.getWord());
+        }
+    }
+
+    @Override
+    void unmarkWord(Word word){
+        /*
+        reset the quizMarked field of a word to false if true previously. a marked word is unmarked when
+        the weight of 4 is gained on the word. the marked field is saved in the csv file as well
+         */
+        if(!word.isQuizMarked()) {
+            System.out.println(ANSI_RESET + "Word has not been marked. Press \"m\" and then enter to mark");
+        }
+        else {
+            word.setQuizMarked(false);
+            quizMarkedWordsIdList.remove(Integer.valueOf(word.getWordId()));
+            System.out.printf(ANSI_RESET + "Word %s has been unmarked \n", word.getWord());
+        }
+    }
+
+
+    @Override
+    void addToMarkedList(int wordId) {
+        if(!quizMarkedWordsIdList.contains(wordId)){
+            quizMarkedWordsIdList.add(wordId);
+        }
     }
 }

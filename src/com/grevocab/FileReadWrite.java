@@ -12,7 +12,8 @@ public class FileReadWrite {
 
     private HashMap<Integer, Word> wordMap = new HashMap<>();
 
-    private ArrayList<Integer> markedWordsIdList = new ArrayList<>();
+    private ArrayList<Integer> quizMarkedWordsIdList = new ArrayList<>();
+    private ArrayList<Integer> hangmanMarkedWordsIdList = new ArrayList<>();
 
     public FileReadWrite(String wordsFile) {
         this.WORDS_FILE = wordsFile;
@@ -46,9 +47,14 @@ public class FileReadWrite {
         }
     }
 
-    public ArrayList<Integer> getMarkedWordsIdList(){
-        Collections.shuffle(markedWordsIdList);
-        return markedWordsIdList;
+    public ArrayList<Integer> getQuizMarkedWordsIdList(){
+        Collections.shuffle(quizMarkedWordsIdList);
+        return quizMarkedWordsIdList;
+    }
+
+    public ArrayList<Integer> getHangmanMarkedWordsIdList(){
+        Collections.shuffle(hangmanMarkedWordsIdList);
+        return hangmanMarkedWordsIdList;
     }
 
     private Word readWord(String line){
@@ -58,18 +64,23 @@ public class FileReadWrite {
         String definition = data[2].replace("  ", " ");
         String example = data[3].replace("  ", " ");
         int weight = Integer.parseInt(data[4]);
-        boolean marked = Boolean.parseBoolean(data[5]);
+        boolean quizMarked = Boolean.parseBoolean(data[5]);
+        boolean hangmanMarked = Boolean.parseBoolean((data[6]));
 
-        if(marked){
-            markedWordsIdList.add(wordId);
+        if(quizMarked){
+            quizMarkedWordsIdList.add(wordId);
         }
 
-        return new Word(wordId, word, definition, example, weight, marked);
+        if(hangmanMarked){
+            hangmanMarkedWordsIdList.add(wordId);
+        }
+
+        return new Word(wordId, word, definition, example, weight, quizMarked, hangmanMarked);
     }
 
     private String getLine(Word word){
         String line = String.join(",",String.valueOf(word.getWordId()), word.getWord(), word.getDefinition(),
-                word.getExample(), String.valueOf(word.getWeight()), String.valueOf(word.isMarked()));
+                word.getExample(), String.valueOf(word.getWeight()), String.valueOf(word.isQuizMarked()), String.valueOf(word.isHangmanMarked()));
          return line + "\n";
     }
 }
