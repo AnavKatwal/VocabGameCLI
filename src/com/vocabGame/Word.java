@@ -1,4 +1,4 @@
-package com.grevocab;
+package com.vocabGame;
 
 public class Word {
     private final int wordId;

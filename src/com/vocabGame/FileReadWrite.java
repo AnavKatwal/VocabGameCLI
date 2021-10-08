@@ -1,4 +1,4 @@
-package com.grevocab;
+package com.vocabGame;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
